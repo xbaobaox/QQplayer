@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+  outline: none;
+}
+body {
+  font-size: 14px;
+  font-family: poppin, Tahoma, Arial;
+}
+.header_bar {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header_bar_top {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+}
+.qq_icon {
+  width: 170px;
+  height: 46px;
+  /* margin:auto 0; */
+}
+.header_bar_top{
+  border-bottom:1px solid  #f2f2f2;
+}
+.header_bar_top_ul {
+  display: flex;
+  margin-left: 23px;
+  width: 500px;
+  font-weight: 400;
+}
+.header_bar_top_ul li {
+  padding: 0 20px;
+  height: 90px;
+  line-height: 90px;
+}
+.header_bar_top_ul li a {
+  font-size: 18px;
+  color: #000;
+}
+
+.header_bar_top_ul li:first-child {
+  background-color: #31c27c;
+}
+.header_bar_top_ul .first_child {
+  font-size: 18px;
+  color: #fff;
+  background: #31c27c;
+}
+.header_bar_input_box {
+  position: relative;
+}
+.header_bar_input_box input {
+  width: 220px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  border: 1px solid #c9c9c9;
+  outline: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.header_bar_input_box input::placeholder {
+  color: #000;
+}
+.input_icon {
+  position: absolute;
+  display: inline-block;
+  top: 33%;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+
+  background: url(./img/icon_sprite.png) 0 -40px no-repeat;
+}
+.login_head {
+  position: relative;
+}
+.login_head img {
+  width: 38px;
+  height: 38px;
+  margin-left: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.login_head .login_icon {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  bottom: 0;
+  right: 0;
+}
+.btn_vip {
+  height: 38px;
+  padding: 10px 5px;
+  background-color: #31c27c;
+  color: #fff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  margin-left: 20px;
+}
+.btn_money{
+  height: 38px;
+  padding: 10px 5px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  margin-left: 10px;
+  background-color: #fff;
+  border:1px solid #c9c9c9;
+}
+.header_bar_bot_ul {
+  display: flex;
+}
