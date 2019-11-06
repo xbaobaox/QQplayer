@@ -59,7 +59,6 @@ body {
 .header_bar_top_ul .first_child {
   font-size: 18px;
   color: #fff;
-  /* background: #31c27c; */
 }
 .header_bar_input_box {
   position: relative;
@@ -1147,6 +1146,80 @@ body {
 .search_input i:hover {
   background-position: 0 -60px;
 }
+.search_input_action {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #c9c9c9;
+  display: flex;
+  width: 639px;
+  height: 300px;
+}
+.search_input_action_left {
+  width: 94px;
+  border-right: 1px solid #c9c9c9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #999;
+}
+.single_song {
+  padding-top: 10px;
+}
+.single_song em {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(./img/icon_sprite.png) -20px -220px;
+  margin-right: 5px;
+  vertical-align: -3px;
+}
+.singer {
+  padding-top: 135px;
+}
+.singer em {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(./img/icon_sprite.png) -20px -240px;
+  margin-right: 5px;
+  vertical-align: -3px;
+}
+.album {
+  padding-top: 60px;
+}
+.album em {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(./img/icon_sprite.png) -40px 0;
+  margin-right: 5px;
+  vertical-align: -3px;
+}
+.search_input_action_right {
+  flex: 1;
+}
+.single_song_box_item {
+  /* background-color: gray; */
+  padding: 10px 0 10px 40px;
+}
+.single_song_box_item:hover,
+.single_song_box_item:hover p,
+.single_song_box_item:hover span {
+  background-color: #31c27c;
+  color: #fff;
+}
+.single_song_box_item a {
+  color: #333;
+}
+.single_song_box_item span{
+  color:#999;
+}
+.search_input_action_right p {
+  display: inline-block;
+}
+.singer_name {
+  color: #31c27c;
+}
 .hot_search {
   margin-top: 20px;
 }
@@ -1432,33 +1505,4 @@ body {
 }
 .download_app_btn:hover {
   background-color: rgb(44, 175, 111);
-}
-body {
-  background: rgba(81, 15, 59);
-  width: 100%;
-  height: 100%;
-}
-.all {
-  position: absolute;
-  background: url(./img/T002R300x300M000003qOjYQ2TlNFt.jpg);
-  background-size: cover;
-  /* background-repeat: no-repeat; */
-  background-position: 50%;
-  filter: blur(65px);
-  transform: translateZ(0);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.6;
-}
-.mask {
-  background-color: rgba(0, 0, 0, 0.35);
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
