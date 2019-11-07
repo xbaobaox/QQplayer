@@ -189,7 +189,7 @@ body {
 .music_list {
   display: flex;
   flex-direction: row;
-  height: 300px;
+  /* height: 300px; */
   flex-wrap: wrap;
 }
 .flex_wrap {
@@ -258,6 +258,7 @@ body {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+  pointer-events: none;
 }
 .cover:hover .cover_play {
   transform: scale(1);
@@ -482,6 +483,7 @@ body {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+  pointer-events: none;
 }
 .new_music_cover {
   width: 90px;
@@ -509,7 +511,8 @@ body {
   margin-left: 15px;
   width: 238px;
 }
-.new_music_title {
+.new_music_title p{
+  width: 200px;
   font-size: 14px;
   color: #000;
   line-height: 24px;
@@ -557,7 +560,7 @@ body {
   /* justify-content: center; */
   align-items: center;
   position: relative;
-  height: 800px;
+  /* height: 800px; */
 }
 #billboard {
   background: url(./img/bg_detail.jpg) 50% 0 repeat-x;
@@ -708,6 +711,10 @@ body {
 .mv_name {
   color: #000;
   margin-top: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 220px;
 }
 .mv_name:hover {
   color: #31c27c;
@@ -1044,6 +1051,9 @@ body {
   color: #fff;
   text-align: center;
   background-color: #31c27c;
+}
+.fixed_music_box a:hover{
+  background-color: rgb(44,175,111);
 }
 .go_top {
   position: fixed;
