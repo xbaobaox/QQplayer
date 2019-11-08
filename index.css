@@ -477,7 +477,7 @@ body {
   cursor: pointer;
   background-image: url(./img/cover_play.png);
   transform: scale(0.5);
-  /*opacity: 0;*/
+  opacity: 0;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -492,6 +492,7 @@ body {
 }
 .new_music_cover:hover .new_music_cover_play {
   transform: scale(0.7);
+  opacity: 1;
 }
 .new_music_img {
   transition: 0.5s;
@@ -731,7 +732,7 @@ body {
   color: #999;
 }
 .mv_show {
-  opacity: 1;
+  /* opacity: 1; */
 }
 .mv_img {
   transition: 0.5s;
@@ -746,6 +747,7 @@ body {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
+  opacity: 1;
 }
 .mv_cover:hover .mv_img {
   transform: scale(1.1);
